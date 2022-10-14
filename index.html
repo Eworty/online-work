@@ -17,10 +17,11 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
+  <!-- HEADER -->
+  <header class="header-section section">
+    <div class="header container">
       <nav class="head-nav">
-        <a class="link" href="./index.html"></a>
+        <a class="header-logo logo" href="./index.html"><img src="./images/site-logo.svg" alt="site-logo"></a>
         <ul class="list">
           <li><a class="link" href="#">Benefits</a></li>
           <li><a class="link" href="#">Features</a></li>
@@ -28,116 +29,230 @@
           <li><a class="link" href="#">Team</a></li>
         </ul>
       </nav>
-      <button class="register-button" type="button">Register</button>
+      <button class="header-button button" type="button">Register</button>
 
     </div>
   </header>
-  <main>
-    <div class="container">
-      <section class="hero section">
-        <h1 class="hero-title">AWESOME USER UNTERFACE IS<br>WHAT WE CAN APPLY</h1>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et eros, pellentesque et.
-          Tristique
-          ullamcorper ac
-          pharetra in nisi sit vivamus lorem.</p>
-        <button class="main-button" type="button">Get started</button>
-      </section>
 
-      <section class="benefits section">
-        <h2 class="title">Advantages</h2>
-        <p class="under-title">Our Benefits</p>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim
-          quis. Vel,
-          faucibus ac
-          justo aliquam donec enim, commodo fermum vitae. Et velit sceleris, commodo fermentum vitae. Et velit sceleris
-        </p>
-        <button class="main-button" type="button">Get started</button>
-        <ul class="list">
-          <li>
-            <h3 class="list-title">Car Rental</h3>
-            <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section section">
+      <div class="hero-content container">
+        <div>
+          <h1 class="hero-title">AWESOME USER UNTERFACE IS<br>WHAT WE CAN APPLY</h1>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et eros, pellentesque et.
+            Tristique
+            ullamcorper ac
+            pharetra in nisi sit vivamus lorem.</p>
+          <button class="primary-button button" type="button">Get started <svg height="24px" width="24px">
+              <use href="./images/symbol-defs.svg#icon-arrow "></use>
+            </svg></button>
+        </div>
+        <img src="./images/hero.svg" width="400px" height="600px" alt="women is playing tennis">
+      </div>
+    </section>
+    <!-- BENEFITS SECTION -->
+    <section class="section">
+      <div class="benefits-container container">
+        <div class="benefits-content">
+          <h2 class="title">Advantages</h2>
+          <p class="under-title">Our Benefits</p>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
+            dignissim
+            quis. Vel,
+            faucibus ac
+            justo aliquam donec enim, commodo fermum vitae. Et velit sceleris, commodo fermentum vitae. Et velit
+            sceleris
+          </p>
+          <button class="primary-button button" type="button">Get started<svg height="24px" width="24px">
+              <use href="./images/symbol-defs.svg#icon-arrow "></use>
+            </svg></button>
+        </div>
+
+        <ul class="card-list list">
+          <li><a class="card-link link" href="#">
+              <div class="icon"><svg height="24px" width="24px">
+                  <use href="./images/symbol-defs.svg#icon-smart-car"></use>
+                </svg></div>
+              <h3 class="list-title">Car Rental</h3>
+              <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+            </a>
           </li>
-          <li>
-            <h3 class="list-title">Boat Cruise</h3>
-            <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+          <li><a class="card-link link" href="#">
+              <div class="icon"><svg height="24px" width="24px">
+                  <use href="./images/symbol-defs.svg#icon-ship"></use>
+                </svg></div>
+              <h3 class="list-title">Boat Cruise</h3>
+              <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+            </a>
           </li>
-          <li>
-            <h3 class="list-title">Bus Trip</h3>
-            <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+          <li><a class="card-link link" href="#">
+              <div class="icon"><svg height="24px" width="24px">
+                  <use href="./images/symbol-defs.svg#icon-bus"></use>
+                </svg></div>
+              <h3 class="list-title">Bus Trip</h3>
+              <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+            </a>
           </li>
-          <li>
-            <h3 class="list-title">Road Trip</h3>
-            <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+          <li><a class="card-link link" href="#">
+              <div class="icon"><svg height="24px" width="24px">
+                  <use href="./images/symbol-defs.svg#icon-driving"></use>
+                </svg></div>
+              <h3 class="list-title">Road Trip</h3>
+              <p class="list-text">Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae</p>
+            </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="features section">
+    <!-- FEATURES SECTION -->
+    <section class="section">
+      <div class="container">
         <h2 class="title">Features</h2>
         <p class="under-title">What we can apply</p>
-        <ul class="list">
-          <li>
-            <h3>MOT consectet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        <ul class="features-list list">
+          <li class="item">
+            <svg class="item-icon" height="64px" width="64px">
+              <use href="./images/symbol-defs.svg#icon-python"></use>
+            </svg>
+            <h3 class="list-title">MOT consectet</h3>
+            <p class="list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
           </li>
-          <li>
-            <h3>MOT consectet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+          <li class="item">
+            <svg class="item-icon" height="64px" width="64px">
+              <use href="./images/symbol-defs.svg#icon-iost "></use>
+            </svg>
+            <h3 class="list-title">MOT consectet</h3>
+            <p class="list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
           </li>
-          <li>
-            <h3>MOT consectet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+          <li class="item">
+            <svg class="item-icon" height="64px" width="64px">
+              <use href="./images/symbol-defs.svg#icon-stacks "></use>
+            </svg>
+            <h3 class="list-title">MOT consectet</h3>
+            <p class="list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="about section">
-        <h2 class="title">About us</h2>
-        <p class="under-title">Who we are</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel,
-          faucibus ac
-          justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris, commodo entum vitaefermentum vitae. Et
-          velit
-          sceleris nullam aliquet dignissim</p>
-        <button class="main-button" type="button">Get STARTED</button>
-      </section>
+    <!-- ABOUT SECTION -->
+    <section class="about-section section">
+      <div class="about-content container">
+        <img src="./images/about.jpg" alt="team" width="570" height="530">
+        <div>
+          <h2 class="title">About us</h2>
+          <p class="under-title">Who we are</p>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
+            dignissim
+            quis. Vel,
+            faucibus ac
+            justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris, commodo entum vitaefermentum vitae. Et
+            velit
+            sceleris nullam aliquet dignissim</p>
+          <button class="primary-button button" type="button">Get STARTED<svg height="24px" width="24px">
+              <use href="./images/symbol-defs.svg#icon-arrow "></use>
+            </svg></button>
+        </div>
+      </div>
+    </section>
 
-      <section class="team section">
+    <!-- TEAM SECTION -->
+    <section class="team-section section">
+      <div class="container">
         <h2 class="title">Our Team</h2>
         <p class="under-title">How we look like</p>
-        <ul class="list">
-          <li>
-            <h3>CTO May & Baker</h3>
-            <p>Tayo Oshinuwa</p>
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+        <ul class="team-list list">
+          <li class="first-item item">
+            <h3 class="list-title">CTO May & Baker</h3>
+            <p class="list-under-title">Tayo Oshinuwa</p>
+            <p class="text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
           </li>
-          <li>
-            <h3>CTO May & Baker</h3>
-            <p>Tayo Oshinuwa</p>
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+          <li class="second-item item">
+            <h3 class="list-title">CTO May & Baker</h3>
+            <p class="list-under-title">Tayo Oshinuwa</p>
+            <p class="text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
           </li>
-          <li>
-            <h3>CTO May & Baker</h3>
-            <p>Tayo Oshinuwa</p>
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+          <li class="third-item item">
+            <h3 class="list-title">CTO May & Baker</h3>
+            <p class="list-under-title">Tayo Oshinuwa</p>
+            <p class="text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
     </div>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <p>Copyright &#169 2022 AWESOME</p>
-      <p>All rights reserved</p>
-      <ul class="list">
-        <li><a class="link" href=""></a></li>
-        <li><a class="link" href=""></a></li>
-        <li><a class="link" href=""></a></li>
-        <li><a class="link" href=""></a></li>
-      </ul>
-
+  <footer class="footer-section section">
+    <div class="footer-content container">
+      <!-- FOOTER-MAIN -->
+      <div class="footer"><a class="footer-logo logo" href="./index.html"><img src="./images/site-logo.svg"
+            alt="site-logo"></a>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p class="text">Copyright &#169 2022 AWESOME</p>
+        <p class="text">All rights reserved</p>
+        <ul class="list">
+          <li class="item"><a class="item-link link" href=""><svg height="16px" width="16px">
+                <use href="./images/symbol-defs.svg#icon-icon1 "></use>
+              </svg></a></li>
+          </svg></a></li>
+          <li class="item"><a class="item-link link" href=""><svg height="16px" width="16px">
+                <use href="./images/symbol-defs.svg#icon-icon2 "></use>
+              </svg></a></li>
+          <li class="item"><a class="item-link link" href=""><svg height="16px" width="16px">
+                <use href="./images/symbol-defs.svg#icon-icon3 "></use>
+              </svg></a></li>
+          <li class="item"><a class="item-link link" href=""><svg height="16px" width="16px">
+                <use href="./images/symbol-defs.svg#icon-icon4 "></use>
+              </svg></a></li>
+        </ul>
+      </div>
+      <!-- COMPANY -->
+      <div class="company">
+        <p class="footer-title">Company</p>
+        <ul class="list">
+          <li class="item">
+            <p class="list-text">Lorem Ipsum 1</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem 2</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem 3</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem 4</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem 5</p>
+          </li>
+        </ul>
+      </div>
+      <!-- SUPPORT -->
+      <div class="support">
+        <p class="footer-title">Support</p>
+        <ul class="list">
+          <li class="item">
+            <p class="list-text">Lorem Ipsum 6</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem Ipsum 7</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem Ipsum 8</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem Ipsum 9</p>
+          </li>
+          <li class="item">
+            <p class="list-text">Lorem Ipsum 10</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
     </div>
   </footer>
 </body>
