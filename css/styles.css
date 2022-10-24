@@ -9,13 +9,13 @@
   --background-buttom-color: #647b64;
   --background-accent-color: #647b64;
   --white-color: #fff;
-  --icon-color: #647B64;
+  --icon-color: #647b64;
   --accent-icon-color: #fff;
   --accent-vector-color: #647b64;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -31,7 +31,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
 
 .list {
   list-style-type: none;
@@ -82,11 +81,12 @@ p {
   text-transform: uppercase;
   color: var(--button-text-color);
   fill: var(--button-text-color);
-  background-image: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+  background-image: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%);
   box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
   cursor: pointer;
   border-radius: 2px;
   border-color: transparent;
+  transition: color 1000ms, background-color 1000ms, fill 1000ms;
 }
 
 .primary-button:focus,
@@ -106,9 +106,7 @@ p {
   box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
   border-radius: 2px;
   border-color: transparent;
-
 }
-
 
 /* HEADER */
 .header-section {
@@ -141,12 +139,14 @@ p {
   align-items: center;
   height: 48px;
   color: var(--secondary-text-color);
+
+  transition: color 1000ms, background-color 1000ms, text-decoration-line 1000ms;
 }
 
 .header .link:hover,
 .header .link:focus {
   text-decoration-line: underline;
-  font-feature-settings: 'liga' off;
+  font-feature-settings: "liga" off;
 }
 
 .header .header-button {
@@ -155,11 +155,13 @@ p {
   font-size: 16px;
   line-height: 1.5;
   color: var(--button-text-color);
-  background-image: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%),
-    linear-gradient(102.3deg, #0BB1E3 -4.62%, #0F2976 178.22%);
+  background-image: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%),
+    linear-gradient(102.3deg, #0bb1e3 -4.62%, #0f2976 178.22%);
   border-radius: 3px;
   border-color: transparent;
   cursor: pointer;
+
+  transition: color 1000ms, background-color 1000ms;
 }
 
 .header .header-button:focus,
@@ -193,7 +195,25 @@ p {
   align-items: center;
 }
 
+.hero-title::before {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: -50px;
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    197.92deg,
+    #ef8031 -227.37%,
+    rgba(239, 128, 49, 0.307045) 1.58%,
+    rgba(239, 128, 49, 0) 103.02%
+  );
+}
+
 .hero-title {
+  position: relative;
   margin-bottom: 24px;
   font-weight: 500;
   font-size: 36px;
@@ -212,8 +232,24 @@ p {
   display: flex;
 }
 
+.benefits-content::before {
+  left: -136px;
+  top: -16px;
+  position: absolute;
+  display: block;
+  width: 600px;
+  height: 160px;
+  background-image: linear-gradient(
+    164.26deg,
+    rgba(239, 128, 49, 0) -335.51%,
+    rgba(239, 128, 49, 0.15) -20.24%,
+    rgba(239, 128, 49, 0) 119.45%
+  );
+  content: "";
+}
 .benefits-content {
   flex-shrink: 0;
+  position: relative;
 }
 
 .benefits-container .under-title {
@@ -250,6 +286,8 @@ p {
 .card-list .card-link {
   display: block;
   padding: 32px 40px;
+
+  transition: color 1000ms, background-color 1000ms, fill 1000ms;
 }
 
 .card-link:hover .icon,
@@ -264,7 +302,6 @@ p {
   border-radius: 8px;
   box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
 }
-
 
 .card-list .list-title {
   margin-bottom: 8px;
@@ -283,17 +320,55 @@ p {
 
 /* FEATURES */
 .features-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   border-color: var(--white-color);
 }
 
+.features-list::before {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  left: -136px;
+  bottom: -32px;
+  width: 224px;
+  height: 224px;
+  background-image: url(../images/decor-dots.png);
+  content: "";
+}
+
+.features-list::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  right: -136px;
+  bottom: -32px;
+  width: 600px;
+  height: 160px;
+  background-image: linear-gradient(
+    164.26deg,
+    rgba(239, 128, 49, 0) -335.51%,
+    rgba(239, 128, 49, 0.15) -20.24%,
+    rgba(239, 128, 49, 0) 119.45%
+  );
+  transform: rotate(180deg);
+  content: "";
+}
+
 .features-list .item {
   padding: 60px 50px;
-  background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%),
-    #FFFFFF;
+  background: linear-gradient(
+      358.27deg,
+      rgba(100, 123, 100, 0.77) -118.86%,
+      rgba(100, 123, 100, 0) 25.62%,
+      rgba(100, 123, 100, 0) 98.53%
+    ),
+    #ffffff;
   fill: var(--icon-color);
   border-radius: 8px;
+
+  transition: color 1000ms, background 1000ms, fill 1000ms;
 }
 
 .features-list .item:hover,
@@ -316,8 +391,6 @@ p {
   letter-spacing: 0.04em;
 }
 
-
-
 /* ABOUT */
 .about-section {
   padding-bottom: 24px;
@@ -334,7 +407,25 @@ p {
   max-width: 455px;
   letter-spacing: 0.04em;
 }
+.about-image {
+  position: relative;
+}
 
+.about-image::after {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 40px;
+  top: 40px;
+  background-image: linear-gradient(
+    197.92deg,
+    rgba(239, 128, 49, 0) -227.37%,
+    rgba(239, 128, 49, 0.15) 1.58%,
+    rgba(239, 128, 49, 0) 103.02%
+  );
+  content: "";
+}
 
 /* TEAM */
 .team-section {
@@ -350,7 +441,13 @@ p {
   padding: 24px 32px;
   width: 368px;
   height: 408px;
-  background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+  background: linear-gradient(
+      358.27deg,
+      rgba(100, 123, 100, 0.77) -118.86%,
+      rgba(100, 123, 100, 0) 25.62%,
+      rgba(100, 123, 100, 0) 98.53%
+    ),
+    #ffffff;
   border-radius: 8px;
 }
 
@@ -396,7 +493,7 @@ p {
 .footer-section {
   padding-top: 48px;
   padding-bottom: 48px;
-  background-color: #F0DCC5;
+  background-color: #f0dcc5;
 }
 
 .footer-content {
@@ -431,6 +528,8 @@ p {
   background-color: #dfd1c0;
   fill: var(--icon-color);
   border-radius: 50%;
+
+  transition: color 1000ms, background-color 1000ms, fill 1000ms;
 }
 
 .footer .item-link:hover,
